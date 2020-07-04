@@ -1,2 +1,2 @@
 # scrapy-example
-ETL service example on Scrapy
+ETL service example on Scrapy with PostgreSQL (Postgres)
