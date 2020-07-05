@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapy-example'
+BOT_NAME = 'scrapy_example'
 
-SPIDER_MODULES = ['scrapy-example.spiders']
-NEWSPIDER_MODULE = 'scrapy-example.spiders'
+SPIDER_MODULES = ['scrapy_example.spiders']
+NEWSPIDER_MODULE = 'scrapy_example.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'scrapy-example (+http://www.yourdomain.com)'
+#USER_AGENT = 'scrapy_example (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scrapy-example.middlewares.ExampleProjectSpiderMiddleware': 543,
+#    'scrapy_example.middlewares.ExampleProjectSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'scrapy-example.middlewares.ExampleProjectDownloaderMiddleware': 543,
+#    'scrapy_example.middlewares.ExampleProjectDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'scrapy-example.pipelines.PostsPipeline': 300,
+   'scrapy_example.pipelines.PostsPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
