@@ -15,7 +15,7 @@ class PostsPipeline(object):
         self.hostname = 'localhost'
         self.username = 'postgres'
         self.password = '1q2w3e' # your password
-        self.database = 'example_project'
+        self.database = 'ycombinator'
         self.connection = None
         self.cursor = None
 
