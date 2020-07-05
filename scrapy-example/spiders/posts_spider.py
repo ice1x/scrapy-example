@@ -4,8 +4,9 @@ import datetime
 from bs4 import BeautifulSoup
 from scrapy.crawler import CrawlerProcess
 from scrapy.loader import ItemLoader
-from scrapy-example.scrapy-example.items import Posts
-# from scrapy-example.items import Posts
+# from scrapy-example.scrapy-example.items import Posts
+from scrapy-example.items import Posts
+# from items import Posts
 
 MAX_PAGES = 35
 DATE_FORMAT = '%Y-%m-%d'
