@@ -63,13 +63,8 @@ class PostsSpiderForward(scrapy.Spider):
     }
 
     def start_requests(self):
-        print(scrapy.Request(url='https://news.ycombinator.com/news?p=21', callback=self.parse))
-        for page_index in range(1, MAX_PAGES):
-            base = 'https://news.ycombinator.com/news?p='
-            yield scrapy.Request(
-                url=f'{base}{page_index}',
-                callback=self.parse
-            )
+        url = 'https://news.ycombinator.com/news?p=1'
+        yield scrapy.Request(url=f'{url}', callback=self.parse)
 
     def parse(self, response):
         soup = BeautifulSoup(response.body)
